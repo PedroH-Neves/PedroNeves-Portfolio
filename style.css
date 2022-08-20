@@ -86,7 +86,7 @@
 
 .project-title {
   margin-top: 15px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Crete Round', serif;
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
@@ -143,7 +143,7 @@
 }
 
 .project-title-two {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Crete Round', serif;
   font-size: 32px;
   line-height: 44px;
   padding: 0 3%;
@@ -196,7 +196,7 @@
 }
 
 .about-title {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Crete Round', serif;
   font-size: 72px;
   line-height: 88px;
   letter-spacing: 0.37px;
@@ -253,6 +253,56 @@
   margin-bottom: 40px;
 }
 
+/* CONTACT ME SECTION */
+
+.contact-section {
+  padding: 120px 20px 20px 20px;
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #172b4d;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 500px;
+}
+
+.form-input {
+  border-style: solid;
+  border-bottom: 1px solid #c2c7cf;
+  padding: 10px 0 10px 20px;
+  color: #979493;
+}
+
+.text-area {
+  border-style: solid;
+  border: 1px solid #c2c7cf;
+  color: #3c3a39;
+  max-width: 45%;
+  max-height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #ff6b00;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  border: none;
+}
+
 /* GLOBAL  */
 
 .primary-color {
@@ -272,7 +322,7 @@
 }
 
 .secundary-font {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Crete Round', serif;
 }
 
 .third-font {
