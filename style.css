@@ -179,6 +179,56 @@
   text-align: center;
 }
 
+/* ABOUT SECTION */
+
+.about-section {
+  background: #1c1a19;
+}
+
+.about-box {
+  position: relative;
+  padding: 120px 20px 160px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-title {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+}
+
+.about-text {
+  max-width: 70%;
+}
+
+.resume-btn {
+  background-color: #ff6b00;
+  color: #ffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  padding: 10px 10px;
+}
+
+.background-three {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.division-line {
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid #ffff;
+}
+
 /* GLOBAL  */
 
 .primary-color {
