@@ -86,10 +86,18 @@
 
 .project-title {
   margin-top: 15px;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
 }
 
 .project-text {
   margin-top: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
 }
 
 .project-list-tags {
@@ -102,6 +110,7 @@
 .project-list-item {
   border: 1px solid #8993a4;
   padding: 8px 12px;
+  color: #091e42;
 }
 
 .project-link {
@@ -114,23 +123,60 @@
   font-size: 17px;
 }
 
+/* PROJECT SESSION TWO */
+
+.project-section-two {
+  display: grid;
+}
+
 .project-box-two {
   display: flex;
   flex-direction: column;
-  margin: 10%;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10% auto;
   background-image: url("./assets/Projects/Img\ Placeholder\ 2.svg");
+  width: 80%;
+  height: 386px;
+  padding-top: 84px;
+  color: #ffff;
+}
+
+.project-title-two {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0 3%;
+}
+
+.project-text-two {
+  padding: 0 3%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.project-list-tags-two {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0 3%;
 }
 
 .project-list-item-two {
-  border: 1px solid black;
+  border: none;
   padding: 8px 12px;
-  background-color: #ffff 24%;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
 }
 
 .project-link-two {
   margin-top: 12px;
-  padding: 8px 10px;
+  padding: 15px 10px;
   background-color: #ff6b00;
+  text-align: center;
 }
 
 /* GLOBAL  */
