@@ -36,16 +36,16 @@
 #h1 {
   margin: 0;
   max-width: 375px;
-  font-family: sans-serif;
+  font-family: 'Crete Round', serif;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 58px;
   line-height: 64px;
   letter-spacing: 0.37px;
 }
 
 #h3 {
   max-width: 375px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 32px;
   margin-top: 10px;
@@ -53,7 +53,7 @@
 
 .intro-text {
   max-width: 375px;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -77,6 +77,20 @@
 }
 
 /* PROJECT SECTION */
+
+.projects-section-title {
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.division-line {
+  width: 53%;
+  border: 1px solid #212121;
+  margin: 40px auto;
+}
 
 .project-box {
   display: flex;
@@ -223,7 +237,7 @@
   bottom: 0;
 }
 
-.division-line {
+.division-line-two {
   width: 80%;
   margin: 10px auto;
   border: 1px solid #ffff;
@@ -288,9 +302,14 @@
   border-style: solid;
   border: 1px solid #c2c7cf;
   color: #3c3a39;
-  max-width: 45%;
-  max-height: 100px;
+  width: 45%;
+  height: 100px;
   resize: none;
+}
+
+.placeholder {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .submit-btn {
@@ -301,6 +320,26 @@
   font-size: 17px;
   letter-spacing: 0.03em;
   border: none;
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+  padding-top: 120px;
+  position: relative;
+}
+
+.list-links-two {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 20%;
+}
+
+.footer-bar {
+  position: absolute;
+  padding: 15px 30%;
 }
 
 /* GLOBAL  */
@@ -315,18 +354,6 @@
 
 .background {
   background: #1c1a19;
-}
-
-.primary-font {
-  font-family: 'Roboto', sans-serif;
-}
-
-.secundary-font {
-  font-family: 'Crete Round', serif;
-}
-
-.third-font {
-  font-family: 'Poppins', sans-serif;
 }
 
 .no-underscore {
