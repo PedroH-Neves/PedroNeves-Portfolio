@@ -290,21 +290,23 @@
   align-items: center;
   gap: 24px;
   max-width: 500px;
+  margin: 0 auto;
 }
 
 .form-input {
   border-style: none;
   border-bottom: 1px solid #c2c7cf;
-  width: 45%;
+  width: 95%;
   padding: 10px 0 10px 20px;
   color: #979493;
 }
 
 .text-area {
+  background: #fbf8f7;
   border-style: solid;
   border: 1px solid #c2c7cf;
   color: #3c3a39;
-  width: 45%;
+  width: 95%;
   height: 100px;
   resize: none;
 }
