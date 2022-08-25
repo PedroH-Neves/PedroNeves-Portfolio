@@ -331,7 +331,6 @@
 
 .footer-section {
   padding-top: 120px;
-  
 }
 
 .list-links-two {
@@ -387,14 +386,3 @@ a:visited {
   background: #ffff;
   border: none;
 }
-
-/*   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-  margin: 10% auto;
-  background-image: url("./assets/Projects/Img\ Placeholder\ 2.svg");
-  width: 80%;
-  height: 386px;
-  padding-top: 84px;
-  color: #ffff; */
