@@ -291,6 +291,7 @@
   gap: 24px;
   max-width: 500px;
   margin: 0 auto;
+  padding-top: 70px;
 }
 
 .form-input {
@@ -330,20 +331,19 @@
 
 .footer-section {
   padding-top: 120px;
-  position: relative;
+  
 }
 
 .list-links-two {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 20px;
-  padding-right: 20%;
+  padding-left: 38%;
+  padding-right: 38%;
 }
 
 .footer-bar {
-  position: absolute;
-  padding: 15px 30%;
+  padding: 12px 36% 10px 35%;
 }
 
 /* GLOBAL  */
