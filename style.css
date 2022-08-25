@@ -290,20 +290,24 @@
   align-items: center;
   gap: 24px;
   max-width: 500px;
+  margin: 0 auto;
+  padding-top: 70px;
 }
 
 .form-input {
-  border-style: solid;
+  border-style: none;
   border-bottom: 1px solid #c2c7cf;
+  width: 95%;
   padding: 10px 0 10px 20px;
   color: #979493;
 }
 
 .text-area {
+  background: #fbf8f7;
   border-style: solid;
   border: 1px solid #c2c7cf;
   color: #3c3a39;
-  width: 45%;
+  width: 95%;
   height: 100px;
   resize: none;
 }
@@ -327,20 +331,18 @@
 
 .footer-section {
   padding-top: 120px;
-  position: relative;
 }
 
 .list-links-two {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 20px;
-  padding-right: 20%;
+  padding-left: 38%;
+  padding-right: 38%;
 }
 
 .footer-bar {
-  position: absolute;
-  padding: 15px 30%;
+  padding: 12px 36% 10px 35%;
 }
 
 /* GLOBAL  */
@@ -384,14 +386,3 @@ a:visited {
   background: #ffff;
   border: none;
 }
-
-/*   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-  margin: 10% auto;
-  background-image: url("./assets/Projects/Img\ Placeholder\ 2.svg");
-  width: 80%;
-  height: 386px;
-  padding-top: 84px;
-  color: #ffff; */
