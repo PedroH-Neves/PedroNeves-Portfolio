@@ -96,8 +96,7 @@
   font-family: 'Crete Round', serif;
   font-size: 40px;
   padding-top: 120px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .division-line {
@@ -375,12 +374,29 @@
     display: none;
   }
   
-  /* FIRST SECTION */
+  /* INTRO SECTION */
   
   .intro-section {
     padding: 260px 10%;
     height: 870px;
     position: relative;
+  }
+
+  #h1 {
+    font-size: 72px;
+    line-height: 81.5px;
+  }
+
+  #h3 {
+    font-size: 32px;
+    line-height: 44px;
+    max-width: 500px;
+  }
+
+  .intro-text {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 500px;
   }
 
   .list-links {
@@ -401,8 +417,58 @@
     top: 0;
   }
 
+  /* PROJECT SECTION */
 
-  /* SECOND SECTION */
+  .desktop-division {
+    display: flex;
+    align-items: center;
+    margin: 0 10%;
+    gap: 30px;
+    padding-top: 120px;
+  }
+
+  .projects-section-title {
+    padding-top: 0;
+  }
+
+  .division-line {
+    width: 70%;
+    border: 1px solid #212121;
+    margin: 0;
+  }
+
+  .project-img {
+    width: 50%;
+  }
+
+  .project-box {
+    flex-direction: row;
+    display: flex;
+    gap: 25px;
+  }
+
+  .project-content {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .project-title {
+    margin-top: 0;
+  }
+
+  .project-text {
+    max-width: 60%;
+  }
+
+  .project-link {
+    margin-top: 20px;
+  }
+
+
+  /* PROJECT SECTION TWO */
 
   .projects-section-two {
     display: grid;

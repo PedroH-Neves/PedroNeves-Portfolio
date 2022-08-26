@@ -64,27 +64,31 @@
       <img src="./assets/Icons/Illustration-header.svg" alt="big background image" class="background-img-one-big">
     </section>
     <section class="projects-section">
-      <h2 class="projects-section-title">
-        My Recent Works
-      </h2>
-      <hr class="division-line">
+      <div class="desktop-division">
+        <h2 class="projects-section-title">
+          My Recent Works
+        </h2>
+        <div class="division-line"></div>
+      </div>
       <div class="project-box">
         <img src="./assets/Projects/Img-Placeholder.svg" alt="" class="project-img">
-        <h3 class="project-title">
-          Multi-Post Stories
-        </h3>
-        <p class="project-text">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="project-list-tags">
-          <li class="project-list-item"><span class="tag">rust</span></li>
-          <li class="project-list-item"><span class="tag">elixir</span></li>
-          <li class="project-list-item"><span class="tag">c++</span></li>
-          <li class="project-list-item"><span class="tag">lua</span></li>
-        </ul>
-        <a href="#" class="project-link primary-color no-underscore button-hover button-pressed button-disabled">See
-          Project</a>
+        <div class="project-content">
+          <h3 class="project-title">
+            Multi-Post Stories
+          </h3>
+          <p class="project-text">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="project-list-tags">
+            <li class="project-list-item"><span class="tag">rust</span></li>
+            <li class="project-list-item"><span class="tag">elixir</span></li>
+            <li class="project-list-item"><span class="tag">c++</span></li>
+            <li class="project-list-item"><span class="tag">lua</span></li>
+          </ul>
+          <a href="#" class="project-link primary-color no-underscore button-hover button-pressed button-disabled">See
+            Project</a>
+        </div>
       </div>
       <section class="projects-section-two">
         <div class="project-box-two">
@@ -236,7 +240,8 @@
       <h3 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get
         in touch.</h3>
       <form action="https://formspree.io/f/mgeqvaev" method="post" class="contact-form">
-        <input id="name" name="clientName" class="form-input" type="text" placeholder="Full name" maxlength="30" required>
+        <input id="name" name="clientName" class="form-input" type="text" placeholder="Full name" maxlength="30"
+          required>
         <input id="email" name="clientEmail" class="form-input" type="email" placeholder="Email address" required>
         <textarea class="text-area placeholder" placeholder="Write here" maxlength="500" required></textarea>
         <button class="submit-btn primary-color button-hover button-pressed" type="submit">Get in touch</button>
