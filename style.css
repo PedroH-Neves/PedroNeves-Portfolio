@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 
-#body {
+.body {
   min-width: 375px;
-  max-width: 680px;
 }
 
 /* HEADER */
 
-#header {
+.header {
   background: #3c3a39;
   height: 92px;
   padding: 0 10%;
@@ -23,6 +22,17 @@
 .logo {
   font-family: 'Rubik Maze', cursive;
   font-size: 80px;
+}
+
+.menu-links {
+  display: none;
+}
+
+.menu-links-itens {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 /* SECTION-ONE */
@@ -74,6 +84,10 @@
   position: absolute;
   right: 0;
   bottom: -5%;
+}
+
+.background-img-one-big {
+  display: none;
 }
 
 /* PROJECT SECTION */
@@ -345,6 +359,76 @@
   padding: 12px 36% 10px 35%;
 }
 
+/* MEDIA QUERY */
+
+@media (min-width: 768px) {
+
+  /* HEADER */
+
+  .menu-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+  
+  /* FIRST SECTION */
+  
+  .intro-section {
+    padding: 260px 10%;
+    height: 870px;
+    position: relative;
+  }
+
+  .list-links {
+    flex-direction: column;
+    position: absolute;
+    top: 350px;
+    left: 35px;
+  }
+
+  .background-img-one {
+    display: none;
+  }
+
+  .background-img-one-big {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+
+  /* SECOND SECTION */
+
+  .projects-section-two {
+    display: grid;
+    grid-template-columns: 435px 435px 435px;
+    grid-template-rows: 369px 369px 369px;
+    padding-left: 10%;
+  }
+
+  /* ABOUT SECTION */
+
+  .about-box {
+    padding-left: 10%;
+  }
+
+  .lang-box {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* CONTACT SECTION */
+  
+  .contact-section {
+    display: flex;
+  }
+}
+
 /* GLOBAL  */
 
 .primary-color {
@@ -378,11 +462,5 @@
 .button-pressed:active {
   color: #fff5e1;
   background: #ff6b00;
-  border: none;
-}
-
-a:visited {
-  color: #5b5957;
-  background: #ffff;
   border: none;
 }
