@@ -432,6 +432,11 @@
 
   .projects-section-title {
     padding-top: 0;
+    font-size: 42px;
+  }
+
+  .project-text {
+    font-size: 22px;
   }
 
   .division-line {
@@ -525,6 +530,35 @@
   
   .contact-section {
     display: flex;
+    gap: 6%;
+  }
+
+  .contact-text {
+    margin: 0;
+    width: 45%;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-form {
+    margin: 0;
+    width: 45%;
+    padding-top: 0;
+  }
+
+  /* FOOTER */
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .list-links-two {
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .footer-bar {
+    display: none;
   }
 }
 
