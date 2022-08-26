@@ -251,6 +251,10 @@
   bottom: 0;
 }
 
+.background-three-big {
+  display: none;
+}
+
 .division-line-two {
   width: 80%;
   margin: 10px auto;
@@ -422,7 +426,6 @@
   .desktop-division {
     display: flex;
     align-items: center;
-    margin: 0 10%;
     gap: 30px;
     padding-top: 120px;
   }
@@ -445,6 +448,7 @@
     flex-direction: row;
     display: flex;
     gap: 25px;
+    margin-left: 0;
   }
 
   .project-content {
@@ -472,9 +476,13 @@
 
   .projects-section-two {
     display: grid;
-    grid-template-columns: 435px 435px 435px;
-    grid-template-rows: 369px 369px 369px;
-    padding-left: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+
+  .project-box-two {
+    margin-left: 0;
   }
 
   /* ABOUT SECTION */
@@ -483,9 +491,34 @@
     padding-left: 10%;
   }
 
+  .about-text {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 35%;
+  }
+
+  .background-three-big {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  .background-three {
+    display: none;
+  }
+
   .lang-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 20%;
+  }
+
+  .lang-list {
+    text-align: left;
+  }
+
+  .lang-list-item {
+    margin-left: 15px;
   }
 
   /* CONTACT SECTION */
@@ -529,4 +562,9 @@
   color: #fff5e1;
   background: #ff6b00;
   border: none;
+}
+
+.desktop-width {
+  max-width: 80%;
+  margin: 0 auto;
 }
