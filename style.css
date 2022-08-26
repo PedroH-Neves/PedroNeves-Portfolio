@@ -365,7 +365,6 @@
 /* MEDIA QUERY */
 
 @media (min-width: 768px) {
-
   /* HEADER */
 
   .menu-links {
@@ -377,9 +376,9 @@
   .hamburger-icon {
     display: none;
   }
-  
+
   /* INTRO SECTION */
-  
+
   .intro-section {
     padding: 260px 10%;
     height: 870px;
@@ -435,10 +434,6 @@
     font-size: 42px;
   }
 
-  .project-text {
-    font-size: 22px;
-  }
-
   .division-line {
     width: 70%;
     border: 1px solid #212121;
@@ -470,12 +465,12 @@
 
   .project-text {
     max-width: 60%;
+    font-size: 22px;
   }
 
   .project-link {
     margin-top: 20px;
   }
-
 
   /* PROJECT SECTION TWO */
 
@@ -527,7 +522,7 @@
   }
 
   /* CONTACT SECTION */
-  
+
   .contact-section {
     display: flex;
     gap: 6%;
