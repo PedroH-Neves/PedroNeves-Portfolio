@@ -16,14 +16,20 @@
   <title>Portfolio</title>
 </head>
 
-<body id="body">
-  <header id="header">
+<body class="body">
+  <header class="header">
     <a href="#" class="logo primary-color no-underscore">P</a>
     <nav class="menu-icon">
-      <img src="./assets/Icons/Burger.svg" alt="menu icon">
+      <img class="hamburger-icon" src="./assets/Icons/Burger.svg" alt="menu icon">
+      <ul class="menu-links">
+        <li class="menu-links-itens"><a class="no-underscore primary-color" href="#portfolio">Portfolio</a></li>
+        <li class="menu-links-itens"><a class="no-underscore primary-color" href="#about">About</a></li>
+        <li class="menu-links-itens"><a class="no-underscore primary-color" href="#contact">Contact</a></li>
+      </ul>
+      <a class="mail-icon" href="#contact"><img src="./assets/Icons/mail-icon.svg" alt="mail icon" class="mail-icon"></a>
     </nav>
   </header>
-  <main>
+  <main class="main">
     <section class="intro-section background">
       <h1 id="h1" class="secundary-color">
         Hey There.
@@ -56,136 +62,141 @@
       </ul>
 
       <img class="background-img-one" src="./assets/Background/illustration-header-mobile.svg" alt="backgroun image">
+      <img src="./assets/Icons/Illustration-header.svg" alt="big background image" class="background-img-one-big">
     </section>
-    <section class="projects-section">
-      <h2 class="projects-section-title">
-        My Recent Works
-      </h2>
-      <hr class="division-line">
+    <section class="projects-section desktop-width">
+      <div class="desktop-division">
+        <h2 class="projects-section-title">
+          My Recent Works
+        </h2>
+        <div class="division-line"></div>
+      </div>
       <div class="project-box">
         <img src="./assets/Projects/Img-Placeholder.svg" alt="" class="project-img">
-        <h3 class="project-title">
-          Multi-Post Stories
-        </h3>
-        <p class="project-text">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="project-list-tags">
-          <li class="project-list-item"><span class="tag">rust</span></li>
-          <li class="project-list-item"><span class="tag">elixir</span></li>
-          <li class="project-list-item"><span class="tag">c++</span></li>
-          <li class="project-list-item"><span class="tag">lua</span></li>
-        </ul>
-        <a href="#" class="project-link primary-color no-underscore button-hover button-pressed button-disabled">See
-          Project</a>
+        <div class="project-content">
+          <h3 class="project-title">
+            Multi-Post Stories
+          </h3>
+          <p class="project-text">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="project-list-tags">
+            <li class="project-list-item"><span class="tag">rust</span></li>
+            <li class="project-list-item"><span class="tag">elixir</span></li>
+            <li class="project-list-item"><span class="tag">c++</span></li>
+            <li class="project-list-item"><span class="tag">lua</span></li>
+          </ul>
+          <a href="#" class="project-link primary-color no-underscore button-hover button-pressed button-disabled">See
+            Project</a>
+        </div>
       </div>
-      <section class="projects-section-two">
-        <div class="project-box-two">
-          <h3 class="project-title-two">
-            Profesional Art Printing Data
-          </h3>
-          <p class="project-text-two">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
-            standard
-          </p>
-          <ul class="project-list-tags-two">
-            <li class="project-list-item-two"><span class="tag">rust</span></li>
-            <li class="project-list-item-two"><span class="tag">elixir</span></li>
-            <li class="project-list-item-two"><span class="tag">lua</span></li>
-          </ul>
+      <section id="portfolio" class="projects-section-two">
+        <div class="project-box-two project-box-two-hover">
+            <h3 class="project-title-two">
+              Profesional Art Printing Data
+            </h3>
+            <p class="project-text-two">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+              standard
+            </p>
+            <ul class="project-list-tags-two">
+              <li class="project-list-item-two"><span class="tag">rust</span></li>
+              <li class="project-list-item-two"><span class="tag">elixir</span></li>
+              <li class="project-list-item-two"><span class="tag">lua</span></li>
+            </ul>
           <a href="#"
             class="project-link-two primary-color no-underscore button-hover button-pressed button-disabled">See
             Project</a>
         </div>
-        <div class="project-box-two">
-          <h3 class="project-title-two">
-            Profesional Art Printing Data
-          </h3>
-          <p class="project-text-two">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
-            standard
-          </p>
-          <ul class="project-list-tags-two">
-            <li class="project-list-item-two"><span class="tag">rust</span></li>
-            <li class="project-list-item-two"><span class="tag">elixir</span></li>
-            <li class="project-list-item-two"><span class="tag">lua</span></li>
-          </ul>
+        <div class="project-box-two project-box-two-hover">
+            <h3 class="project-title-two">
+              Profesional Art Printing Data
+            </h3>
+            <p class="project-text-two">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+              standard
+            </p>
+            <ul class="project-list-tags-two">
+              <li class="project-list-item-two"><span class="tag">rust</span></li>
+              <li class="project-list-item-two"><span class="tag">elixir</span></li>
+              <li class="project-list-item-two"><span class="tag">lua</span></li>
+            </ul>
           <a href="#"
             class="project-link-two primary-color no-underscore button-hover button-pressed button-disabled">See
             Project</a>
         </div>
-        <div class="project-box-two">
-          <h3 class="project-title-two">
-            Profesional Art Printing Data
-          </h3>
-          <p class="project-text-two">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
-            standard
-          </p>
-          <ul class="project-list-tags-two">
-            <li class="project-list-item-two"><span class="tag">rust</span></li>
-            <li class="project-list-item-two"><span class="tag">elixir</span></li>
-            <li class="project-list-item-two"><span class="tag">lua</span></li>
-          </ul>
+        <div class="project-box-two project-box-two-hover">
+            <h3 class="project-title-two">
+              Profesional Art Printing Data
+            </h3>
+            <p class="project-text-two">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+              standard
+            </p>
+            <ul class="project-list-tags-two">
+              <li class="project-list-item-two"><span class="tag">rust</span></li>
+              <li class="project-list-item-two"><span class="tag">elixir</span></li>
+              <li class="project-list-item-two"><span class="tag">lua</span></li>
+            </ul>
           <a href="#"
             class="project-link-two primary-color no-underscore button-hover button-pressed button-disabled">See
             Project</a>
         </div>
-        <div class="project-box-two">
-          <h3 class="project-title-two">
-            Profesional Art Printing Data
-          </h3>
-          <p class="project-text-two">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
-            standard
-          </p>
-          <ul class="project-list-tags-two">
-            <li class="project-list-item-two"><span class="tag">rust</span></li>
-            <li class="project-list-item-two"><span class="tag">elixir</span></li>
-            <li class="project-list-item-two"><span class="tag">lua</span></li>
-          </ul>
+        <div class="project-box-two project-box-two-hover">
+            <h3 class="project-title-two">
+              Profesional Art Printing Data
+            </h3>
+            <p class="project-text-two">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+              standard
+            </p>
+            <ul class="project-list-tags-two">
+              <li class="project-list-item-two"><span class="tag">rust</span></li>
+              <li class="project-list-item-two"><span class="tag">elixir</span></li>
+              <li class="project-list-item-two"><span class="tag">lua</span></li>
+            </ul>
           <a href="#"
             class="project-link-two primary-color no-underscore button-hover button-pressed button-disabled">See
             Project</a>
         </div>
-        <div class="project-box-two">
-          <h3 class="project-title-two">
-            Profesional Art Printing Data
-          </h3>
-          <p class="project-text-two">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
-            standard
-          </p>
-          <ul class="project-list-tags-two">
-            <li class="project-list-item-two"><span class="tag">rust</span></li>
-            <li class="project-list-item-two"><span class="tag">elixir</span></li>
-            <li class="project-list-item-two"><span class="tag">lua</span></li>
-          </ul>
+        <div class="project-box-two project-box-two-hover">
+            <h3 class="project-title-two">
+              Profesional Art Printing Data
+            </h3>
+            <p class="project-text-two">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+              standard
+            </p>
+            <ul class="project-list-tags-two">
+              <li class="project-list-item-two"><span class="tag">rust</span></li>
+              <li class="project-list-item-two"><span class="tag">elixir</span></li>
+              <li class="project-list-item-two"><span class="tag">lua</span></li>
+            </ul>
           <a href="#"
             class="project-link-two primary-color no-underscore button-hover button-pressed button-disabled">See
             Project</a>
         </div>
-        <div class="project-box-two">
-          <h3 class="project-title-two">
-            Profesional Art Printing Data
-          </h3>
-          <p class="project-text-two">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
-            standard
-          </p>
-          <ul class="project-list-tags-two">
-            <li class="project-list-item-two"><span class="tag">rust</span></li>
-            <li class="project-list-item-two"><span class="tag">elixir</span></li>
-            <li class="project-list-item-two"><span class="tag">lua</span></li>
-          </ul>
+        <div class="project-box-two project-box-two-hover">
+            <h3 class="project-title-two">
+              Profesional Art Printing Data
+            </h3>
+            <p class="project-text-two">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+              standard
+            </p>
+            <ul class="project-list-tags-two">
+              <li class="project-list-item-two"><span class="tag">rust</span></li>
+              <li class="project-list-item-two"><span class="tag">elixir</span></li>
+              <li class="project-list-item-two"><span class="tag">lua</span></li>
+            </ul>
           <a href="#"
             class="project-link-two primary-color no-underscore button-hover button-pressed button-disabled">See
             Project</a>
         </div>
       </section>
     </section>
-    <section class="about-section">
+    <section id="about" class="about-section">
       <div class="about-box">
         <h3 class="about-title secundary-color">About Me</h3>
         <p class="about-text primary-color">Hello I’m a software developer! I can help you build a product , feature or
@@ -194,9 +205,10 @@
           hestiate to contact me.</p>
         <a href="#" class="resume-btn no-underscore button-hover button-pressed button-disabled">Get My Resume</a>
         <img src="./assets/Background/Group.svg" alt="" class="background-three">
+        <img src="./assets/Icons/illustration-about-me.svg" alt="big background image three" class="background-three-big">
       </div>
       <hr class="division-line-two">
-      <div class="lang-box primary-color">
+      <div class="lang-box primary-color desktop-width">
         <ul class="lang-list">
           <li class="lang-title">
             <img class="lang-icon" src="./assets/Icons/Rectangle-55.svg" alt="lang icon">
@@ -226,11 +238,12 @@
         </ul>
       </div>
     </section>
-    <section class="contact-section">
+    <section id="contact" class="contact-section desktop-width">
       <h3 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get
         in touch.</h3>
       <form action="https://formspree.io/f/mgeqvaev" method="post" class="contact-form">
-        <input id="name" name="clientName" class="form-input" type="text" placeholder="Full name" maxlength="30" required>
+        <input id="name" name="clientName" class="form-input" type="text" placeholder="Full name" maxlength="30"
+          required>
         <input id="email" name="clientEmail" class="form-input" type="email" placeholder="Email address" required>
         <textarea class="text-area placeholder" placeholder="Write here" maxlength="500" required></textarea>
         <button class="submit-btn primary-color button-hover button-pressed" type="submit">Get in touch</button>
