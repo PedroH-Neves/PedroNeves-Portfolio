@@ -35,6 +35,34 @@
   line-height: 20px;
 }
 
+.mail-icon {
+  display: none;
+}
+
+.menu-overlay {
+  display: none;
+  background-color: #3c3a39;
+  min-width: 375px;
+}
+
+.mobile-menu {
+  list-style: none;
+  height: 100vh;
+}
+
+.mobile-menu-itens {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  padding-left: 10%;
+}
+
+.menu-line {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
 /* SECTION-ONE */
 
 .intro-section {
@@ -379,9 +407,15 @@
   }
 
   .mail-icon {
+    display: block;
     position: absolute;
-    right: 70px;
-    top: 18px;
+    right: 6%;
+    top: 4%;
+
+  }
+
+  .menu-overlay {
+    display: none;
   }
 
   /* INTRO SECTION */
