@@ -14,3 +14,7 @@ function closeMenu() {
 
 closeBtn.addEventListener('click', closeMenu)
 
+const closeBtn2 = document.querySelector('.mobile-menu');
+
+closeBtn2.addEventListener('click', closeMenu)
+
