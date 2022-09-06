@@ -41,26 +41,39 @@
 
 .menu-overlay {
   display: none;
+  position: fixed;
   background-color: #3c3a39;
   min-width: 375px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .mobile-menu {
   list-style: none;
-  height: 100vh;
 }
 
 .mobile-menu-itens {
   font-family: 'Inter', sans-serif;
+  color: #fff5e1;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   padding-left: 10%;
+  padding-bottom: 3%;
+  padding-top: 4%;
 }
 
 .menu-line {
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
+  border: 1px solid #6f6c6b;
+}
+
+#close-btn {
+  padding-left: 80%;
+  padding-top: 15%;
 }
 
 /* SECTION-ONE */

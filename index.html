@@ -20,7 +20,7 @@
   <header class="header">
     <a href="#" class="logo primary-color no-underscore">P</a>
     <nav class="menu-icon">
-      <img class="hamburger-icon" src="./assets/Icons/Burger.svg" alt="menu icon">
+      <div id="menu-btn"><img class="hamburger-icon" src="./assets/Icons/Burger.svg" alt="menu icon"></div>
       <ul class="menu-links">
         <li class="menu-links-itens"><a class="no-underscore primary-color" href="#portfolio">Portfolio</a></li>
         <li class="menu-links-itens"><a class="no-underscore primary-color" href="#about">About</a></li>
@@ -29,15 +29,6 @@
       <a class="mail-icon" href="#contact"><img src="./assets/Icons/mail-icon.svg" alt="mail icon" class="mail-icon"></a>
     </nav>
   </header>
-  <div class="menu-overlay primary-color">
-    <ul class="mobile-menu">
-      <li class="mobile-menu-itens">Portfolio</li>
-      <hr class="menu-line">
-      <li class="mobile-menu-itens">About</li>
-      <hr class="menu-line">
-      <li class="mobile-menu-itens">Contact</li>
-    </ul>
-  </div>
   <main class="main">
     <section class="intro-section background">
       <h1 id="h1" class="secundary-color">
@@ -280,7 +271,19 @@
     <img class="footer-bar" src="./assets/Background/Shape.svg" alt="bar">
   </footer>
 
-  <script src=""></script>
+  <div class="menu-overlay">
+    <div id="close-btn"><img src="./assets/Icons/Icon.svg" alt="" class="x-btn"></div>
+    <ul class="mobile-menu">
+      <li class="mobile-menu-itens"><a href="#portfolio" class="mobile-menu-itens no-underscore">Portfolio</a></li>
+      <hr class="menu-line">
+      <li class="mobile-menu-itens"><a href="#about" class="mobile-menu-itens no-underscore">About</a></li>
+      <hr class="menu-line">
+      <li class="mobile-menu-itens"><a href="#contact" class="mobile-menu-itens no-underscore">Contact</a></li>
+      <hr class="menu-line">
+    </ul>
+  </div>
+
+  <script src="main.js"></script>
 
 </body>
 
