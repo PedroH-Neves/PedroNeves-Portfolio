@@ -206,7 +206,7 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
-  background-image: url("./assets/Projects/Img\ Placeholder\ 2.svg");
+  background-image: url("./assets/Projects/Img-Placeholder-2.svg");
   padding-top: 84px;
   margin-left: 100px;
   color: #ffff;
@@ -641,14 +641,15 @@
 /* JAVA POPUP */
 
 .popup-project {
-  display: none;
+  display: block;
+  z-index: 1;
   background-color: #fff;
   backdrop-filter: blur(100px);
   position: fixed;
   left: 4%;
   right: 4%;
-  top: 7%;
-  bottom: 10%;
+  top: 5%;
+  bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -663,7 +664,10 @@
 }
 
 .popupClose {
+  position: absolute;
   padding-left: 20px;
+  right: 30px;
+  top: 50px;
 }
 
 .popup-list {
@@ -682,9 +686,13 @@
   padding: 10px;
 }
 
-.popup-img {
+.popup-img-box {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
+}
+
+.popup-img {
+  height: 220px;
   width: 311px;
 }
 
@@ -702,7 +710,6 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  letter-spacing: 3%;
   gap: 20px;
 }
 

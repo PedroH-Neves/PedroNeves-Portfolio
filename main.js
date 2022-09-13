@@ -24,63 +24,68 @@ const workArr = [
   {
     name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: "./assets/Projects/Img\ Placeholder\ 2.svg",
+    featuredImage: "./assets/Projects/Img-Placeholder-2.svg",
     technologies: ["rust", "elixir", "lua"],
     linkToLiveVersion: "https://pedroh-neves.github.io/PedroNeves.github.io/",
     linkToSource: "https://github.com/PedroH-Neves/PedroNeves.github.io",
+    id: '0',
   },
 
   {
     name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: "./assets/Projects/Img\ Placeholder\ 2.svg",
+    featuredImage: "./assets/Projects/Img-Placeholder-2.svg",
     technologies: ["rust", "elixir", "lua"],
     linkToLiveVersion: "https://pedroh-neves.github.io/PedroNeves.github.io/",
     linkToSource: "https://github.com/PedroH-Neves/PedroNeves.github.io",
+    id: '1',
   },
 
   {
     name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: "./assets/Projects/Img\ Placeholder\ 2.svg",
+    featuredImage: "./assets/Projects/Img-Placeholder-2.svg",
     technologies: ["rust", "elixir", "lua"],
     linkToLiveVersion: "https://pedroh-neves.github.io/PedroNeves.github.io/",
     linkToSource: "https://github.com/PedroH-Neves/PedroNeves.github.io",
+    id: '2',
   },
 
   {
     name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: "./assets/Projects/Img\ Placeholder\ 2.svg",
+    featuredImage: "./assets/Projects/Img-Placeholder-2.svg",
     technologies: ["rust", "elixir", "lua"],
     linkToLiveVersion: "https://pedroh-neves.github.io/PedroNeves.github.io/",
     linkToSource: "https://github.com/PedroH-Neves/PedroNeves.github.io",
+    id: '3',
   },
 
   {
     name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: "./assets/Projects/Img\ Placeholder\ 2.svg",
+    featuredImage: "./assets/Projects/Img-Placeholder-2.svg",
     technologies: ["rust", "elixir", "lua"],
     linkToLiveVersion: "https://pedroh-neves.github.io/PedroNeves.github.io/",
     linkToSource: "https://github.com/PedroH-Neves/PedroNeves.github.io",
+    id: '4',
   },
 
   {
     name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featuredImage: "./assets/Projects/Img\ Placeholder\ 2.svg",
+    featuredImage: "./assets/Projects/Img-Placeholder-2.svg",
     technologies: ["rust", "elixir", "lua"],
     linkToLiveVersion: "https://pedroh-neves.github.io/PedroNeves.github.io/",
     linkToSource: "https://github.com/PedroH-Neves/PedroNeves.github.io",
+    id: '5',
   },
 
 ];
 
-workArr.forEach(item => {
-  console.log(item)
+workArr.forEach((item) => {
   sectionCards.innerHTML += ` 
-  <div class="project-box-two project-box-two-hover">
+    <div class="project-box-two project-box-two-hover">
           <h3 id="projectTwo" class="project-title-two">
             ${item.name}
           </h3>
@@ -89,12 +94,46 @@ workArr.forEach(item => {
           </p>
           <ul class="project-list-tags-two">
           ${item.technologies.map(tag => {
-            return `<li class="project-list-item-two"><span class="tag">${tag}</span></li>`;
-          }).join('')}
+    return `<li class="project-list-item-two"><span class="tag">${tag}</span></li>`;
+  }).join('')}
           </ul>
-          <a href="#"
+          <a id="${item.id}" href="#" onclick="openModal(this.id)"
             class="project-link-two primary-color no-underscore button-hover button-pressed button-disabled">See
             Project</a>
-        </div>
+    </div>    
   `;
 });
+
+const popup = document.getElementById('popup');
+
+const openModal = (id) => {
+  let project = workArr.filter(item => item.id == id)
+  popup.style.display = 'block'
+  console.log(popup)
+  popup.innerHTML =
+    `
+  <div class="popup-project">
+    <div class="popup-title">${project[0].name}</div>
+    <img onclick="modalClose()" src="./assets/Icons/Icon.svg" alt="" class="popupClose closePop">
+    <div class="popup-tec">
+      <ul class="popup-list">
+      ${project[0].technologies.map(tags => {
+      return `<li class="popup-list-itens">${tags}</li>`;
+    }).join('')}
+      </ul>
+    </div>
+    <div class="popup-img-box"><img class="popup-img" src=${project[0].featuredImage} alt="placeholder image"></div>
+    <div class="popup-desc">${project[0].description}</div>
+    <div class="popup-links primary-color">
+      <div class="popup-link-source"><a href="${project[0].linkToLiveVersion}" rel="noopener" target="_blank" class="primary-color no-underscore">See Live</a><img
+          src="./assets/Icons/arrow-icon.svg" alt="" class="popup-img-2"></div>
+      <div class="popup-link-source"><a href="${project[0].linkToSource}" rel="noopener" target="_blank" class="primary-color no-underscore">See Source</a><img
+          src="./assets/Icons/Github-white.svg" alt="" class="popup-img-2"></div>
+    </div>
+  </div>
+  `
+};
+
+const modalClose = () => {
+  popup.style.display = 'none';
+}
