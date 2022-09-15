@@ -128,7 +128,7 @@ const openModal = (id) => {
     <img onclick="modalClose()" src="./assets/Icons/Icon.svg" alt="" class="popupClose closePop">
     <div class="popup-tec">
       <ul class="popup-list">
-      ${project[0].technologies.map((tags) =>`<li class="popup-list-itens">${tags}</li>`).join('')}
+      ${project[0].technologies.map((tags) => `<li class="popup-list-itens">${tags}</li>`).join('')}
       </ul>
     </div>
     <img class="popup-img" src=${project[0].featuredImage} alt="placeholder image">
