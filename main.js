@@ -113,6 +113,7 @@ const openModal = (id) => {
   popup.innerHTML =
     `
   <div class="popup-project">
+    <div class="desktop-popup">
     <div class="popup-title">${project[0].name}</div>
     <img onclick="modalClose()" src="./assets/Icons/Icon.svg" alt="" class="popupClose closePop">
     <div class="popup-tec">
@@ -122,13 +123,16 @@ const openModal = (id) => {
     }).join('')}
       </ul>
     </div>
-    <div class="popup-img-box"><img class="popup-img" src=${project[0].featuredImage} alt="placeholder image"></div>
+    <img class="popup-img" src=${project[0].featuredImage} alt="placeholder image">
+    </div>
+    <div class="desktop-popup-2">
     <div class="popup-desc">${project[0].description}</div>
     <div class="popup-links primary-color">
       <div class="popup-link-source"><a href="${project[0].linkToLiveVersion}" rel="noopener" target="_blank" class="primary-color no-underscore">See Live</a><img
           src="./assets/Icons/arrow-icon.svg" alt="" class="popup-img-2"></div>
       <div class="popup-link-source"><a href="${project[0].linkToSource}" rel="noopener" target="_blank" class="primary-color no-underscore">See Source</a><img
           src="./assets/Icons/Github-white.svg" alt="" class="popup-img-2"></div>
+    </div>
     </div>
   </div>
   `
