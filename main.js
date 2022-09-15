@@ -106,9 +106,7 @@ workArr.forEach((item) => {
             ${item.description}
           </p>
           <ul class="project-list-tags-two">
-          ${item.technologies.map((tag) => {
-    return `<li class="project-list-item-two"><span class="tag">${tag}</span></li>`;
-  }).join('')}
+          ${item.technologies.map((tag) => `<li class="project-list-item-two"><span class="tag">${tag}</span></li>`).join('')}
           </ul>
           <a id="${item.id}" href="#" onclick="openModal(this.id)"
             class="project-link-two primary-color no-underscore button-hover button-pressed button-disabled">See
@@ -119,8 +117,9 @@ workArr.forEach((item) => {
 
 const popup = document.getElementById('popup');
 
+// eslint-disable-next-line no-unused-vars
 const openModal = (id) => {
-  const project = workArr.filter(item => item.id === id);
+  const project = workArr.filter((item) => item.id === id);
   popup.style.display = 'block';
   popup.innerHTML = `
   <div class="popup-project">
@@ -129,9 +128,7 @@ const openModal = (id) => {
     <img onclick="modalClose()" src="./assets/Icons/Icon.svg" alt="" class="popupClose closePop">
     <div class="popup-tec">
       <ul class="popup-list">
-      ${project[0].technologies.map((tags) => {
-    return `<li class="popup-list-itens">${tags}</li>`;
-  }).join('')}
+      ${project[0].technologies.map((tags) =>`<li class="popup-list-itens">${tags}</li>`).join('')}
       </ul>
     </div>
     <img class="popup-img" src=${project[0].featuredImage} alt="placeholder image">
@@ -149,6 +146,7 @@ const openModal = (id) => {
   `;
 };
 
+// eslint-disable-next-line no-unused-vars
 const modalClose = () => {
   popup.style.display = 'none';
 };
