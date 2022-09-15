@@ -406,19 +406,20 @@
 
 /* JAVA POPUP */
 
-.popup-project {
+#popup {
   display: flex;
-  flex-direction: column;
+  top: 40px;
+}
+
+.popup-project {
   z-index: 1;
-  background: red;
+  background: #fff;
   backdrop-filter: blur(100px);
   position: fixed;
   left: 16px;
   right: 16px;
-  top: 40px;
   bottom: 40px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 3% 5% 3% 5%;
 }
 
 .popup-title {
@@ -454,6 +455,9 @@
 }
 
 .popup-img {
+  width: 70%;
+  object-fit: cover;
+  padding-top: 5px;
 }
 
 .popup-desc {
@@ -724,6 +728,7 @@
 
 .popup-project {
   display: flex;
+  flex-direction: row;
   z-index: 1;
   background-color: #fff;
   backdrop-filter: blur(100px);
@@ -772,18 +777,14 @@
   padding: 10px;
 }
 
-.popup-img-box {
-  padding-top: 30px;
-  padding-bottom: 25px;
-}
-
 .popup-img {
-  height: fit-content;
+  width: 80%;
+  max-height: 80%;
 }
 
 .desktop-popup-2 {
   width: 40%;
-  padding-top: 30%;
+  padding-top: 10%;
 }
 
 .popup-desc {

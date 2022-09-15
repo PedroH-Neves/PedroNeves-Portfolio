@@ -22,6 +22,16 @@ const sectionCards = document.getElementById('portfolio');
 
 const workArr = [
   {
+    name: "Multi-Post Stories",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    featuredImage: "./assets/Projects/Img-Placeholder.svg",
+    technologies: ["rust", "elixir","c++", "lua"],
+    linkToLiveVersion: "https://pedroh-neves.github.io/PedroNeves.github.io/",
+    linkToSource: "https://github.com/PedroH-Neves/PedroNeves.github.io",
+    id: 'main',
+  },
+
+  {
     name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     featuredImage: "./assets/Projects/Img-Placeholder-2.svg",
@@ -84,6 +94,9 @@ const workArr = [
 ];
 
 workArr.forEach((item) => {
+  if(item.id == 'main'){
+   return
+  }
   sectionCards.innerHTML += ` 
     <div class="project-box-two project-box-two-hover">
           <h3 id="projectTwo" class="project-title-two">
@@ -107,6 +120,7 @@ workArr.forEach((item) => {
 const popup = document.getElementById('popup');
 
 const openModal = (id) => {
+  console.log(id)
   let project = workArr.filter(item => item.id == id)
   popup.style.display = 'block'
   console.log(popup)
