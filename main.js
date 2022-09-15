@@ -25,7 +25,7 @@ const workArr = [
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     featuredImage: './assets/Projects/Img-Placeholder.svg',
-    technologies: ['rust', 'elixir','c++', 'lua'],
+    technologies: ['rust', 'elixir', 'c++', 'lua'],
     linkToLiveVersion: 'https://pedroh-neves.github.io/PedroNeves.github.io/',
     linkToSource: 'https://github.com/PedroH-Neves/PedroNeves.github.io',
     id: 'main',
@@ -96,7 +96,7 @@ const workArr = [
 workArr.forEach((item) => {
   if (item.id === 'main') {
     return;
-  } 
+  }
   sectionCards.innerHTML += ` 
     <div class="project-box-two project-box-two-hover">
           <h3 id="projectTwo" class="project-title-two">
@@ -120,19 +120,18 @@ workArr.forEach((item) => {
 const popup = document.getElementById('popup');
 
 const openModal = (id) => {
-  const project = workArr.filter(item => item.id == id)
+  const project = workArr.filter(item => item.id === id);
   popup.style.display = 'block';
-  popup.innerHTML =
-    `
+  popup.innerHTML = `
   <div class="popup-project">
     <div class="desktop-popup">
     <div class="popup-title">${project[0].name}</div>
     <img onclick="modalClose()" src="./assets/Icons/Icon.svg" alt="" class="popupClose closePop">
     <div class="popup-tec">
       <ul class="popup-list">
-      ${project[0].technologies.map(tags => {
-      return `<li class="popup-list-itens">${tags}</li>`;
-    }).join('')}
+      ${project[0].technologies.map((tags) => {
+    return `<li class="popup-list-itens">${tags}</li>`;
+  }).join('')}
       </ul>
     </div>
     <img class="popup-img" src=${project[0].featuredImage} alt="placeholder image">
@@ -147,7 +146,7 @@ const openModal = (id) => {
     </div>
     </div>
   </div>
-  `
+  `;
 };
 
 const modalClose = () => {
