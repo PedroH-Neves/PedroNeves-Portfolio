@@ -94,6 +94,9 @@ const workArr = [
 ];
 
 workArr.forEach((item) => {
+  if(item.id == 'main'){
+    return
+   } 
   sectionCards.innerHTML += ` 
     <div class="project-box-two project-box-two-hover">
           <h3 id="projectTwo" class="project-title-two">
