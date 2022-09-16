@@ -160,7 +160,7 @@ form.addEventListener('submit', (event) => {
   if (emailValidation.test(email.value)) {
     errorMsg.textContent = '';
   } else {
-    e.preventDefault();
-    errorMsg.textContent = 'Please use lowercase for a valid email address.';
+    event.preventDefault();
+    errorMsg.textContent = 'Please use onlylower case in email field.';
   }
 });
