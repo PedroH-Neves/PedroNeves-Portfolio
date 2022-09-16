@@ -159,5 +159,8 @@ const emailValidation = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
 form.addEventListener('submit', (event) => {
   if (emailValidation.test(email.value)) {
     errorMsg.textContent = '';
-  } 
+  } else {
+    e.preventDefault();
+    errorMsg.textContent = 'Please use lowercase for a valid email address.';
+  }
 });
