@@ -150,3 +150,14 @@ const openModal = (id) => {
 const modalClose = () => {
   popup.style.display = 'none';
 };
+
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const errorMsg = document.getElementById('submmit-msg')
+const emailValidation = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+form.addEventListener('submit', (event) => {
+  if (emailValidation.test(email.value)) {
+    errorMsg.textContent = '';
+  } 
+});
